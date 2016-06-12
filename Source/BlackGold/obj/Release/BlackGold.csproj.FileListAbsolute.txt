@@ -1,0 +1,5 @@
+C:\Program Files (x86)\RimWorld1135Win\Mods\BlackGold\Assemblies\BlackGold.dll
+C:\Program Files (x86)\RimWorld1135Win\Mods\BlackGold\Source\BlackGold\obj\Release\BlackGold.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\RimWorld1135Win\Mods\BlackGold\Source\BlackGold\obj\Release\BlackGold.Properties.Resources.resources
+C:\Program Files (x86)\RimWorld1135Win\Mods\BlackGold\Source\BlackGold\obj\Release\BlackGold.csproj.GenerateResource.Cache
+C:\Program Files (x86)\RimWorld1135Win\Mods\BlackGold\Source\BlackGold\obj\Release\BlackGold.dll

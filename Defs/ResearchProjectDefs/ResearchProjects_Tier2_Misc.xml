@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <!--=============================== Tier 2 Misc ===================================-->
+
+  <ResearchProjectDef>
+    <defName>Pumpjack</defName>
+    <label>pumpjack</label>
+    <description>Allows you to build pumpjacks on top of oil gushers, for harvesting oil into barrels.</description>
+    <totalCost>1500</totalCost>
+    <prerequisites>
+      <li>Barrels</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+  </ResearchProjectDef>
+
+</Defs>

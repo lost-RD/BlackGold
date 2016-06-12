@@ -1,0 +1,13 @@
+C:\Program Files (x86)\RimWorld1135Win\Mods\BlackGold\Source\BlackGold\bin\Debug\BlackGold.dll
+C:\Program Files (x86)\RimWorld1135Win\Mods\BlackGold\Source\BlackGold\bin\Debug\BlackGold.pdb
+C:\Program Files (x86)\RimWorld1135Win\Mods\BlackGold\Source\BlackGold\bin\Debug\Assembly-CSharp.dll
+C:\Program Files (x86)\RimWorld1135Win\Mods\BlackGold\Source\BlackGold\bin\Debug\UnityEngine.dll
+C:\Program Files (x86)\RimWorld1135Win\Mods\BlackGold\Source\BlackGold\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Program Files (x86)\RimWorld1135Win\Mods\BlackGold\Source\BlackGold\bin\Debug\Assembly-UnityScript-firstpass.dll
+C:\Program Files (x86)\RimWorld1135Win\Mods\BlackGold\Source\BlackGold\bin\Debug\Boo.Lang.dll
+C:\Program Files (x86)\RimWorld1135Win\Mods\BlackGold\Source\BlackGold\bin\Debug\UnityScript.Lang.dll
+C:\Program Files (x86)\RimWorld1135Win\Mods\BlackGold\Source\BlackGold\obj\Debug\BlackGold.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\RimWorld1135Win\Mods\BlackGold\Source\BlackGold\obj\Debug\BlackGold.Properties.Resources.resources
+C:\Program Files (x86)\RimWorld1135Win\Mods\BlackGold\Source\BlackGold\obj\Debug\BlackGold.csproj.GenerateResource.Cache
+C:\Program Files (x86)\RimWorld1135Win\Mods\BlackGold\Source\BlackGold\obj\Debug\BlackGold.dll
+C:\Program Files (x86)\RimWorld1135Win\Mods\BlackGold\Source\BlackGold\obj\Debug\BlackGold.pdb

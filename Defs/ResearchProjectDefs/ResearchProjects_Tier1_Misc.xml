@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+  <!--=============================== Tier 1 Misc ===================================-->
+
+  <ResearchProjectDef>
+		<defName>Barrels</defName>
+		<label>barrels</label>
+		<description>Allows colonists to craft barrels which can be filled with oil.</description>
+		<totalCost>500</totalCost>
+	</ResearchProjectDef>
+
+</ResearchProjectDefs>

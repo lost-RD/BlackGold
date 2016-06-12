@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef ParentName="BuildingNaturalBase">
+    <category>Ethereal</category>
+    <label>oil gusher</label>
+    <defName>OilGusher</defName>
+    <thingClass>BlackGold.OilGusher</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Natural/OilGusher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <altitudeLayer>Floor</altitudeLayer>
+    <destroyable>false</destroyable>
+    <useHitPoints>false</useHitPoints>
+    <tickerType>Normal</tickerType>
+    <selectable>true</selectable>
+    <description>Natural oil source.</description>
+    <size>(2,2)</size>
+    <neverOverlapFloors>true</neverOverlapFloors>
+    <blockPlants>true</blockPlants>
+  </ThingDef>
+
+</ThingDefs>
