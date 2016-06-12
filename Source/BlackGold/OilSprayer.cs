@@ -6,15 +6,15 @@ namespace BlackGold
 {
 	public class OilSprayer
 	{
-		private const int MinTicksBetweenSprays = 100;
+		private const int MinTicksBetweenSprays = 10;
 
-		private const int MaxTicksBetweenSprays = 600;
+		private const int MaxTicksBetweenSprays = 100;
 
 		private const int MinSprayDuration = 500;
 
 		private const int MaxSprayDuration = 1000;
 
-		private const float SprayThickness = 0.6f;
+		private const float SprayThickness = 0.9f;
 
 		private Thing parent;
 
@@ -36,7 +36,7 @@ namespace BlackGold
 			if (this.sprayTicksLeft > 0)
 			{
 				this.sprayTicksLeft--;
-				if (Rand.Value < 0.6f)
+				if (Rand.Value < SprayThickness)
 				{
 					MoteThrower.ThrowOilPuffUp(this.parent.TrueCenter());
 				}
@@ -46,7 +46,7 @@ namespace BlackGold
 					{
 						this.endSprayCallback();
 					}
-					this.ticksUntilSpray = Rand.RangeInclusive(500, 2000);
+					this.ticksUntilSpray = Rand.RangeInclusive(MinTicksBetweenSprays, MaxTicksBetweenSprays);
 				}
 			}
 			else
@@ -58,7 +58,7 @@ namespace BlackGold
 					{
 						this.startSprayCallback();
 					}
-					this.sprayTicksLeft = Rand.RangeInclusive(200, 500);
+					this.sprayTicksLeft = Rand.RangeInclusive(MinSprayDuration, MaxSprayDuration);
 				}
 			}
 		}

@@ -32,7 +32,7 @@ namespace BlackGold
             if (this.gusher != null)
             {
                 this.gusher.harvester = this;
-                this.oilSprayer.OilSprayerTick();
+                //this.oilSprayer.OilSprayerTick();
             }
         }
 
