@@ -36,9 +36,9 @@
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
-    <!--<recipes>
+    <recipes>
       <li>MakeBarrel</li>
-    </recipes>-->
+    </recipes>
     <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>
@@ -115,7 +115,6 @@
       <ignoreNeedsPower>true</ignoreNeedsPower>
     </building>
     <constructEffect>ConstructMetal</constructEffect>
-    <!--<designationHotkey>G</designationHotkey>-->
     <researchPrerequisites><li>Pumpjack</li></researchPrerequisites>
   </ThingDef>
  

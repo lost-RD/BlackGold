@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkGivers>
+
+	<WorkGiverDef>
+		<defName>DoBillsFillBarrel</defName>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>104</priorityInType>
+		<fixedBillGiverDefs>
+			<li>Pumpjack</li>
+		</fixedBillGiverDefs>
+		<verb>create</verb>
+		<gerund>creating</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>DoBillsMakeBarrel</defName>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>104</priorityInType>
+		<fixedBillGiverDefs>
+			<li>TableBarrel</li>
+		</fixedBillGiverDefs>
+		<verb>create</verb>
+		<gerund>creating</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+</WorkGivers>

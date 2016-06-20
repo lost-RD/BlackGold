@@ -8,7 +8,7 @@
     <jobString>Making barrel.</jobString>
     <soundWorking>Recipe_Machining</soundWorking>
     <allowMixingIngredients>true</allowMixingIngredients>
-    <workAmount>300</workAmount>
+    <workAmount>1000</workAmount>
     <workSkillLearnFactor>0.25</workSkillLearnFactor>
     <workSpeedStat>SmithingSpeed</workSpeedStat>
     <effectWorking>Smith</effectWorking>
@@ -40,7 +40,7 @@
     <description>Fill a barrel with oil.</description>
     <jobString>Filling barrel.</jobString>
     <soundWorking>Recipe_Machining</soundWorking>
-    <workAmount>1000</workAmount>
+    <workAmount>6666</workAmount>
     <workSpeedStat>SmeltingSpeed</workSpeedStat>
     <effectWorking>Smelt</effectWorking>
     <ingredients>
