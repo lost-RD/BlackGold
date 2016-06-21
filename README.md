@@ -5,9 +5,11 @@ A RimWorld mod that adds oil gushers, pumpjacks and barrels to fill with oil.
 
 ###v0.2:
 
-* Replaced barrel of oil with barrel of crude.
+* Renamed pumpjack to derrick
 * Added refinery that refines crude into oil (1 crude barrel, 6666 work)
-* Items now used unfinished stage
+* Added barrel of crude, made from barrel at derrick.
+* Changed barrel of oil, now made from barrel of crude at refinery
+* Barrels now used unfinished stage while filling and refining
 
 ###v0.1:
 

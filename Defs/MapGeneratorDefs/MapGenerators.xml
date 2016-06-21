@@ -55,7 +55,7 @@
         <minSpacing>25</minSpacing>
         <extraNoBuildEdgeDist>4</extraNoBuildEdgeDist>
         <countPer10kCellsRange>
-          <min>0.7</min>
+          <min>0.1</min>
           <max>1</max>
         </countPer10kCellsRange>
         <clearSpaceSize>30</clearSpaceSize>

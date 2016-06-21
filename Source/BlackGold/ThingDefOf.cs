@@ -8,15 +8,17 @@ namespace BlackGold
     {
         public static ThingDef OilGusher;
 		
-		public static ThingDef Pumpjack;
+		public static ThingDef Derrick;
 		
         public static ThingDef EmptyBarrel;
 		
+        public static ThingDef CrudeBarrel;
+
         public static ThingDef OilBarrel;
 
         public static ThingDef Mote_OilPuff;
 
-        public static ThingDef OilRefinery;
+        public static ThingDef Refinery;
 
         public static void RebindDefs()
         {

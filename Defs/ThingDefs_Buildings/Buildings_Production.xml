@@ -2,7 +2,7 @@
 <Buildings>
 
   <ThingDef ParentName="BenchBase">
-    <DefName>TableBarrel</DefName>
+    <DefName>BarrelTable</DefName>
     <label>barrel table</label>
     <ThingClass>Building_WorkTable</ThingClass>
     <Description>A work station for assembling barrels.</Description>
@@ -36,9 +36,6 @@
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
-    <recipes>
-      <li>MakeBarrel</li>
-    </recipes>
     <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>
@@ -62,11 +59,11 @@
 
 
   <ThingDef ParentName="BuildingBase">
-    <defName>Pumpjack</defName>
-    <label>Pumpjack</label>
-    <thingClass>BlackGold.Building_Pumpjack</thingClass>
+    <defName>Derrick</defName>
+    <label>Derrick</label>
+    <thingClass>BlackGold.Building_Derrick</thingClass>
     <graphicData>
-      <texPath>Things/Building/Production/OilTower</texPath>
+      <texPath>Things/Building/Production/Derrick</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(6,6)</drawSize>
       <damageData>
@@ -97,9 +94,6 @@
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
-    <recipes>
-      <li>FillBarrel</li>
-    </recipes>
     <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>
@@ -119,8 +113,8 @@
   </ThingDef>
   
   <ThingDef ParentName="BuildingBase">
-    <defName>OilRefinery</defName>
-    <label>oil refinery</label>
+    <defName>Refinery</defName>
+    <label>refinery</label>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
       <texPath>Things/Building/Production/Refinery</texPath>
@@ -150,9 +144,6 @@
     </costList>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-3)</interactionCellOffset>
-    <recipes>
-      <li>RefineCrude</li>
-    </recipes>
     <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>

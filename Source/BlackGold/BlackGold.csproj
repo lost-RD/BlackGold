@@ -46,7 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Building_Pumpjack.cs" />
+    <Compile Include="Building_Derrick.cs" />
     <Compile Include="MoteThrower.cs" />
     <Compile Include="OilGusher.cs" />
     <Compile Include="OilSprayer.cs" />

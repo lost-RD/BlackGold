@@ -10,7 +10,7 @@ using UnityEngine;
 
 namespace BlackGold
 {
-	public class Building_Pumpjack : Building_WorkTable
+	public class Building_Derrick : Building_WorkTable
     {
         private OilSprayer oilSprayer;
 

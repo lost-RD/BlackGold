@@ -25,6 +25,15 @@
     <CostList>
       <Steel>10</Steel>
     </CostList>
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>BarrelTable</li>
+      </recipeUsers>
+    </recipeMaker>
   </ThingDef>
   
   <ThingDef ParentName="ResourceBase">
@@ -51,6 +60,16 @@
     <CostList>
       <EmptyBarrel>1</EmptyBarrel>
     </CostList>
+	<recipeMaker>
+      <workSpeedStat>SmeltingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <unfinishedThingDef>PartlyFilledCrude</unfinishedThingDef>
+      <effectWorking>Smelt</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>Derrick</li>
+      </recipeUsers>
+    </recipeMaker>
   </ThingDef>
   
   <ThingDef ParentName="ResourceBase">
@@ -77,6 +96,16 @@
     <CostList>
       <CrudeBarrel>1</CrudeBarrel>
     </CostList>
+	<recipeMaker>
+      <workSpeedStat>SmeltingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <unfinishedThingDef>PartlyRefinedCrude</unfinishedThingDef>
+      <effectWorking>Smelt</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>Refinery</li>
+      </recipeUsers>
+    </recipeMaker>
   </ThingDef>
   
 </Defs>

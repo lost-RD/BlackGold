@@ -14,7 +14,7 @@
     <defName>PartlyRefinedCrude</defName>
     <label>Partly refined barrel of crude</label>
     <graphicData>
-      <texPath>Things/Item/Resource/CrudeBarrel</texPath>
+      <texPath>Things/Item/Resource/OilBarrel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
   </ThingDef>

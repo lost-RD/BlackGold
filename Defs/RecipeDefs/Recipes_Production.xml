@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <RecipeDefs>
-
+<!--
 	<RecipeDef>
     <defName>MakeBarrel</defName>
     <label>make barrel</label>
@@ -96,5 +96,5 @@
     <workSkill>Crafting</workSkill>
   </RecipeDef>  
   
-  
+  -->
 </RecipeDefs>

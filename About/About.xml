@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 
-    <name>Black Gold v0.1</name>
+    <name>Black Gold v0.2</name>
 
     <author>Lost_RD</author>
 
@@ -9,6 +9,6 @@
 
     <targetVersion>RimWorld Alpha 13</targetVersion>
 
-    <description>Introduces oil gushers, pumpjacks and barrels.</description>
+    <description>Introduces an oil industry to RimWorld. Harvest crude from oil gushers into barrels, refine crude into oil and use oil to power generators or make plastics.</description>
 
 </ModMetaData>

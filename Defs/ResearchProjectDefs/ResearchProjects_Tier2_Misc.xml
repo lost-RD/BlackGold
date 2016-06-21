@@ -7,7 +7,7 @@
   <ResearchProjectDef>
     <defName>Pumpjack</defName>
     <label>pumpjack</label>
-    <description>Allows you to build pumpjacks on top of oil gushers, for harvesting oil into barrels.</description>
+    <description>Allows you to build derricks on top of oil gushers, for harvesting crude oil into barrels.</description>
     <totalCost>1500</totalCost>
     <prerequisites>
       <li>Barrels</li>
