@@ -18,6 +18,7 @@
       <MarketValue>1</MarketValue>
       <Flammability>0.1</Flammability>
       <DeteriorationRate>0.1</DeteriorationRate>
+	  <WorkToMake>5000</WorkToMake>
     </statBases>
     <thingCategories>
       <li>Manufactured</li>
@@ -25,11 +26,17 @@
     <CostList>
       <Steel>10</Steel>
     </CostList>
+    <stuffProps>
+      <categories>
+        <li>OilRelated</li>
+      </categories>
+	</stuffProps>
     <recipeMaker>
       <workSpeedStat>SmithingSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
       <effectWorking>Smith</effectWorking>
       <soundWorking>Recipe_Machining</soundWorking>
+	  <unfinishedThingDef>UnfinishedBarrel</unfinishedThingDef>
       <recipeUsers>
         <li>BarrelTable</li>
       </recipeUsers>
@@ -53,6 +60,7 @@
       <MarketValue>5</MarketValue>
       <Flammability>2.0</Flammability>
       <DeteriorationRate>0.1</DeteriorationRate>
+	  <WorkToMake>10000</WorkToMake>
     </statBases>
     <thingCategories>
       <li>Manufactured</li>
@@ -60,10 +68,15 @@
     <CostList>
       <EmptyBarrel>1</EmptyBarrel>
     </CostList>
+    <stuffProps>
+      <categories>
+        <li>OilRelated</li>
+      </categories>
+	</stuffProps>
 	<recipeMaker>
       <workSpeedStat>SmeltingSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
-      <unfinishedThingDef>PartlyFilledCrude</unfinishedThingDef>
+      <unfinishedThingDef>UnfinishedCrudeBarrel</unfinishedThingDef>
       <effectWorking>Smelt</effectWorking>
       <soundWorking>Recipe_Machining</soundWorking>
       <recipeUsers>
@@ -89,6 +102,7 @@
       <MarketValue>10</MarketValue>
       <Flammability>2.0</Flammability>
       <DeteriorationRate>0.1</DeteriorationRate>
+	  <WorkToMake>10000</WorkToMake>
     </statBases>
     <thingCategories>
       <li>Manufactured</li>
@@ -99,7 +113,7 @@
 	<recipeMaker>
       <workSpeedStat>SmeltingSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
-      <unfinishedThingDef>PartlyRefinedCrude</unfinishedThingDef>
+      <unfinishedThingDef>UnfinishedOilBarrel</unfinishedThingDef>
       <effectWorking>Smelt</effectWorking>
       <soundWorking>Recipe_Machining</soundWorking>
       <recipeUsers>

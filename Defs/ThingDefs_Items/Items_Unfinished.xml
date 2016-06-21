@@ -1,8 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <ThingDef Name="UnfinishedBase" Abstract="True">
+    <thingClass>UnfinishedThing</thingClass>
+    <category>Item</category>
+    <label>Unfinished thing</label>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/UnfinishedSculpture</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <altitudeLayer>Item</altitudeLayer>
+    <useHitPoints>true</useHitPoints>
+    <isUnfinishedThing>true</isUnfinishedThing>
+    <selectable>true</selectable>
+    <tradeability>Never</tradeability>
+    <drawerType>RealtimeOnly</drawerType>
+    <!-- For CompForbiddable -->
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+    <thingCategories>
+      <li>Unfinished</li>
+    </thingCategories>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+  </ThingDef>
+
   <ThingDef ParentName="UnfinishedBase">
-    <defName>PartlyFilledCrude</defName>
+    <defName>UnfinishedCrudeBarrel</defName>
     <label>Partly filled barrel</label>
     <graphicData>
       <texPath>Things/Item/Resource/CrudeBarrel</texPath>
@@ -11,10 +45,19 @@
   </ThingDef>
 
   <ThingDef ParentName="UnfinishedBase">
-    <defName>PartlyRefinedCrude</defName>
+    <defName>UnfinishedOilBarrel</defName>
     <label>Partly refined barrel of crude</label>
     <graphicData>
       <texPath>Things/Item/Resource/OilBarrel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="UnfinishedBase">
+    <defName>UnfinishedBarrel</defName>
+    <label>Unfinished barrel</label>
+    <graphicData>
+      <texPath>Things/Item/Resource/EmptyBarrel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
   </ThingDef>

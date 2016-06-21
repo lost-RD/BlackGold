@@ -125,7 +125,8 @@
       </damageData>
     </graphicData>
     <altitudeLayer>BuildingTall</altitudeLayer>
-    <passability>Impassable</passability>
+    <!--passability>Impassable</passability>-->
+    <passability>Standable</passability>
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>0.5</fillPercent>
     <blockLight>true</blockLight>
@@ -144,6 +145,7 @@
     </costList>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-3)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
     <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>
