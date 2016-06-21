@@ -16,6 +16,8 @@ namespace BlackGold
 
         public static ThingDef Mote_OilPuff;
 
+        public static ThingDef OilRefinery;
+
         public static void RebindDefs()
         {
             DefOfHelper.BindDefsFor<ThingDef>(typeof(ThingDefOf));

@@ -27,12 +27,12 @@
     </CostList>
   </ThingDef>
   
-    <ThingDef ParentName="ResourceBase">
-    <defName>OilBarrel</defName>
-    <label>oil barrel</label>
+  <ThingDef ParentName="ResourceBase">
+    <defName>CrudeBarrel</defName>
+    <label>crude oil barrel</label>
     <description>A barrel full of unrefined oil.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/OilBarrel</texPath>
+      <texPath>Things/Item/Resource/CrudeBarrel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
@@ -50,6 +50,32 @@
     </thingCategories>
     <CostList>
       <EmptyBarrel>1</EmptyBarrel>
+    </CostList>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>OilBarrel</defName>
+    <label>oil barrel</label>
+    <description>A barrel full of refined oil.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/OilBarrel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <tickerType>Normal</tickerType>
+    <stackLimit>3</stackLimit>
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints>
+      <MarketValue>10</MarketValue>
+      <Flammability>2.0</Flammability>
+      <DeteriorationRate>0.1</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <CostList>
+      <CrudeBarrel>1</CrudeBarrel>
     </CostList>
   </ThingDef>
   

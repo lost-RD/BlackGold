@@ -37,7 +37,7 @@
   <RecipeDef>
     <defName>FillBarrel</defName>
     <label>Fill barrel</label>
-    <description>Fill a barrel with oil.</description>
+    <description>Fill a barrel with crude oil.</description>
     <jobString>Filling barrel.</jobString>
     <soundWorking>Recipe_Machining</soundWorking>
     <workAmount>6666</workAmount>
@@ -54,11 +54,42 @@
       </li>
     </ingredients>
     <products>
-      <OilBarrel>1</OilBarrel>
+      <CrudeBarrel>1</CrudeBarrel>
     </products>
 	<fixedIngredientFilter>
       <thingDefs>
         <li>EmptyBarrel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>  
+
+  <RecipeDef>
+    <defName>RefineCrude</defName>
+    <label>Refine crude</label>
+    <description>Refine a barrel of crude oil.</description>
+    <jobString>Refine crude.</jobString>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>6666</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CrudeBarrel</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <OilBarrel>1</OilBarrel>
+    </products>
+	<fixedIngredientFilter>
+      <thingDefs>
+        <li>CrudeBarrel</li>
       </thingDefs>
     </fixedIngredientFilter>
     <targetCountAdjustment>1</targetCountAdjustment>

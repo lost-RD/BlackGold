@@ -15,4 +15,16 @@
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
   </ResearchProjectDef>
 
+  <ResearchProjectDef>
+    <defName>Refinery</defName>
+    <label>refinery</label>
+    <description>Allows you to build oil refineries to make oil from crude.</description>
+    <totalCost>1500</totalCost>
+    <prerequisites>
+      <li>Barrels</li>
+      <li>Pumpjack</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+  </ResearchProjectDef>
+
 </Defs>

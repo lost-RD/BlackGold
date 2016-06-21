@@ -3,6 +3,12 @@ A RimWorld mod that adds oil gushers, pumpjacks and barrels to fill with oil.
 
 ##Changelog
 
+###v0.2:
+
+* Replaced barrel of oil with barrel of crude.
+* Added refinery that refines crude into oil (1 crude barrel, 6666 work)
+* Items now used unfinished stage
+
 ###v0.1:
 
 * Added oil gushers that generate just before steam geysers and with the same settings. Did so by modifying MapGenerators.xml which probably makes it incompatible with other mods that modify the same file. Uses steam geyser sprite but I created a custom mote and sprayer.

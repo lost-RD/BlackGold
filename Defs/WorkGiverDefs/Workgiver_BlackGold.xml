@@ -2,15 +2,15 @@
 <WorkGivers>
 
 	<WorkGiverDef>
-		<defName>DoBillsFillBarrel</defName>
+		<defName>DoBillsHarvestCrude</defName>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
-		<priorityInType>104</priorityInType>
+		<priorityInType>105</priorityInType>
 		<fixedBillGiverDefs>
 			<li>Pumpjack</li>
 		</fixedBillGiverDefs>
-		<verb>create</verb>
-		<gerund>creating</gerund>
+		<verb>use</verb>
+		<gerund>using</gerund>
 		<requiredCapacities>
 			<li>Manipulation</li>
 		</requiredCapacities>
@@ -24,8 +24,23 @@
 		<fixedBillGiverDefs>
 			<li>TableBarrel</li>
 		</fixedBillGiverDefs>
-		<verb>create</verb>
-		<gerund>creating</gerund>
+		<verb>use</verb>
+		<gerund>using</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>DoBillsRefineCrude</defName>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>106</priorityInType>
+		<fixedBillGiverDefs>
+			<li>OilRefinery</li>
+		</fixedBillGiverDefs>
+		<verb>use</verb>
+		<gerund>using</gerund>
 		<requiredCapacities>
 			<li>Manipulation</li>
 		</requiredCapacities>
