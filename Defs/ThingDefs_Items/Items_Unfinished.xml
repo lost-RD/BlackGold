@@ -45,10 +45,10 @@
   </ThingDef>
 
   <ThingDef ParentName="UnfinishedBase">
-    <defName>UnfinishedOilBarrel</defName>
+    <defName>UnfinishedPetroleumBarrel</defName>
     <label>Partly refined barrel of crude</label>
     <graphicData>
-      <texPath>Things/Item/Resource/OilBarrel</texPath>
+      <texPath>Things/Item/Resource/PetroleumBarrel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
   </ThingDef>
@@ -58,6 +58,15 @@
     <label>Unfinished barrel</label>
     <graphicData>
       <texPath>Things/Item/Resource/EmptyBarrel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="UnfinishedBase">
+    <defName>UnfinishedPlastic</defName>
+    <label>Unfinished plastic</label>
+    <graphicData>
+      <texPath>Things/Item/Resource/Plastic</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
   </ThingDef>

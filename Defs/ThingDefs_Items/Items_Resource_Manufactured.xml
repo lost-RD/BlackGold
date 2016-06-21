@@ -86,11 +86,11 @@
   </ThingDef>
   
   <ThingDef ParentName="ResourceBase">
-    <defName>OilBarrel</defName>
-    <label>oil barrel</label>
-    <description>A barrel full of refined oil.</description>
+    <defName>PetroleumBarrel</defName>
+    <label>petroleum barrel</label>
+    <description>A barrel full of petroleum.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/OilBarrel</texPath>
+      <texPath>Things/Item/Resource/PetroleumBarrel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
@@ -110,14 +110,115 @@
     <CostList>
       <CrudeBarrel>1</CrudeBarrel>
     </CostList>
+    <stuffProps>
+      <categories>
+        <li>OilRelated</li>
+      </categories>
+	</stuffProps>
 	<recipeMaker>
       <workSpeedStat>SmeltingSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
-      <unfinishedThingDef>UnfinishedOilBarrel</unfinishedThingDef>
+      <unfinishedThingDef>UnfinishedPetroleumBarrel</unfinishedThingDef>
       <effectWorking>Smelt</effectWorking>
       <soundWorking>Recipe_Machining</soundWorking>
       <recipeUsers>
         <li>Refinery</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>Plastic</defName>
+    <label>plastic</label>
+    <description>Some plastic. Not as impressive as you expected. Maybe you can make plasteel with it?</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Plastic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <tickerType>Normal</tickerType>
+    <stackLimit>3</stackLimit>
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints>
+      <MarketValue>10</MarketValue>
+      <Flammability>2.0</Flammability>
+      <DeteriorationRate>0.1</DeteriorationRate>
+	  <WorkToMake>1000</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <CostList>
+      <PetroleumBarrel>3</PetroleumBarrel>
+    </CostList>
+    <stuffProps>
+      <categories>
+        <li>OilRelated</li>
+      </categories>
+	</stuffProps>
+	<recipeMaker>
+      <workSpeedStat>SmeltingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <unfinishedThingDef>UnfinishedPlastic</unfinishedThingDef>
+      <effectWorking>Smelt</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>ChemicalPlant</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>Plasteel</defName>
+    <label>plasteel</label>
+    <description>Advanced spacer tech structural material. Plasteel is extremely strong due to its unique molecular structure.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Plasteel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>27</MarketValue>
+      <SharpDamageMultiplier>1.2</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.0</BluntDamageMultiplier>
+	  <WorkToMake>1000</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(160,178,181)</color>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>2.8</MaxHitPoints>
+        <Beauty>1.2</Beauty>
+        <Flammability>0.1</Flammability>
+        <WorkToMake>2.0</WorkToMake>
+        <MeleeWeapon_Cooldown>0.8</MeleeWeapon_Cooldown>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+    <CostList>
+      <Plastic>1</Plastic>
+      <Steel>10</Steel>
+    </CostList>
+	<recipeMaker>
+      <workSpeedStat>SmeltingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <unfinishedThingDef>UnfinishedPlastic</unfinishedThingDef>
+      <effectWorking>Smelt</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>ElectricSmelter</li>
       </recipeUsers>
     </recipeMaker>
   </ThingDef>

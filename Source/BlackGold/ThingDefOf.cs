@@ -14,11 +14,15 @@ namespace BlackGold
 		
         public static ThingDef CrudeBarrel;
 
-        public static ThingDef OilBarrel;
+        public static ThingDef PetroleumBarrel;
+
+        public static ThingDef Plastic;
 
         public static ThingDef Mote_OilPuff;
 
         public static ThingDef Refinery;
+
+        public static ThingDef ChemicalPlant;
 
         public static void RebindDefs()
         {

@@ -2,21 +2,6 @@
 <WorkGivers>
 
 	<WorkGiverDef>
-		<defName>DoBillsHarvestCrude</defName>
-		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
-		<priorityInType>105</priorityInType>
-		<fixedBillGiverDefs>
-			<li>Derrick</li>
-		</fixedBillGiverDefs>
-		<verb>use</verb>
-		<gerund>using</gerund>
-		<requiredCapacities>
-			<li>Manipulation</li>
-		</requiredCapacities>
-	</WorkGiverDef>
-
-	<WorkGiverDef>
 		<defName>DoBillsMakeBarrel</defName>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
@@ -32,12 +17,42 @@
 	</WorkGiverDef>
 
 	<WorkGiverDef>
+		<defName>DoBillsHarvestCrude</defName>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>105</priorityInType>
+		<fixedBillGiverDefs>
+			<li>Derrick</li>
+		</fixedBillGiverDefs>
+		<verb>use</verb>
+		<gerund>using</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
 		<defName>DoBillsRefineCrude</defName>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
 		<priorityInType>106</priorityInType>
 		<fixedBillGiverDefs>
 			<li>Refinery</li>
+		</fixedBillGiverDefs>
+		<verb>use</verb>
+		<gerund>using</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>DoBillsMakePlastic</defName>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>107</priorityInType>
+		<fixedBillGiverDefs>
+			<li>ChemicalPlant</li>
 		</fixedBillGiverDefs>
 		<verb>use</verb>
 		<gerund>using</gerund>

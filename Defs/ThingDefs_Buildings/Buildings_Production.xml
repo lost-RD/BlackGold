@@ -7,7 +7,7 @@
     <ThingClass>Building_WorkTable</ThingClass>
     <Description>A work station for assembling barrels.</Description>
     <graphicData>
-      <texPath>Things/Building/Production/TableMachining</texPath>
+      <texPath>Things/Building/Production/BarrelTable</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(3.5,1.5)</drawSize>
       <damageData>
@@ -84,7 +84,7 @@
       <Beauty>-40</Beauty>
     </statBases>
     <tickerType>Normal</tickerType>
-    <description>Produces oil from oil gushers. Must be placed on an oil gusher.</description>
+    <description>Harvests crude oil from oil gushers. Must be placed on an oil gusher.</description>
     <size>(6,6)</size>
     <DesignationCategory>Production</DesignationCategory>
     <costList>
@@ -103,13 +103,14 @@
     <Passability>PassThroughOnly</Passability>
     <placeWorkers>
       <li>BlackGold.PlaceWorker_OnOilGusher</li>
+      <li>PlaceWorker_NotUnderRoof</li>
     </placeWorkers>
     <building>
       <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
       <ignoreNeedsPower>true</ignoreNeedsPower>
     </building>
     <constructEffect>ConstructMetal</constructEffect>
-    <researchPrerequisites><li>Pumpjack</li></researchPrerequisites>
+    <researchPrerequisites><li>Pumping</li></researchPrerequisites>
   </ThingDef>
   
   <ThingDef ParentName="BuildingBase">
@@ -124,12 +125,11 @@
         <rect>(0,0,5,5)</rect>
       </damageData>
     </graphicData>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
     <altitudeLayer>BuildingTall</altitudeLayer>
-    <!--passability>Impassable</passability>-->
     <passability>Standable</passability>
-    <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>0.5</fillPercent>
-    <blockLight>true</blockLight>
+    <blockLight>false</blockLight>
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
       <WorkToMake>6000</WorkToMake>
@@ -137,11 +137,11 @@
       <Beauty>-40</Beauty>
     </statBases>
     <tickerType>Normal</tickerType>
-    <description>Produces refined oil from crude oil.</description>
+    <description>Refines crude oil into petroleum.</description>
     <size>(5,5)</size>
     <costList>
-      <Steel>400</Steel>
-      <Components>8</Components>
+      <Steel>600</Steel>
+      <Components>6</Components>
     </costList>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-3)</interactionCellOffset>
@@ -167,6 +167,68 @@
     </building>
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites><li>Refinery</li></researchPrerequisites>
+	<placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+  </ThingDef>
+ 
+   <ThingDef ParentName="BuildingBase">
+    <defName>ChemicalPlant</defName>
+    <label>chemical plant</label>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Production/ChemicalPlant</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(7,7)</drawSize>
+      <damageData>
+        <rect>(0,0,5,5)</rect>
+      </damageData>
+    </graphicData>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <altitudeLayer>BuildingTall</altitudeLayer>
+    <passability>Standable</passability>
+    <fillPercent>0.5</fillPercent>
+    <blockLight>false</blockLight>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToMake>6000</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>-40</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>Makes products from petroleum.</description>
+    <size>(7,7)</size>
+    <costList>
+      <Steel>800</Steel>
+      <Components>8</Components>
+    </costList>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-4)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>2500</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <rotatable>false</rotatable>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Production</designationCategory>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <ignoreNeedsPower>false</ignoreNeedsPower>
+    </building>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites><li>Refinery</li></researchPrerequisites>
+	<placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
   </ThingDef>
  
 </Buildings>

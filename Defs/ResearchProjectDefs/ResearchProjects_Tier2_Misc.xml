@@ -5,10 +5,10 @@
   <!--=============================== Tier 2 Misc ===================================-->
 
   <ResearchProjectDef>
-    <defName>Pumpjack</defName>
-    <label>pumpjack</label>
+    <defName>Pumping</defName>
+    <label>pumping</label>
     <description>Allows you to build derricks on top of oil gushers, for harvesting crude oil into barrels.</description>
-    <totalCost>1500</totalCost>
+    <totalCost>1000</totalCost>
     <prerequisites>
       <li>Barrels</li>
     </prerequisites>
@@ -18,11 +18,21 @@
   <ResearchProjectDef>
     <defName>Refinery</defName>
     <label>refinery</label>
-    <description>Allows you to build oil refineries to make oil from crude.</description>
+    <description>Allows you to build oil refineries to make petroleum from crude.</description>
     <totalCost>1500</totalCost>
     <prerequisites>
-      <li>Barrels</li>
-      <li>Pumpjack</li>
+      <li>Pumping</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Chemicals</defName>
+    <label>chemicals</label>
+    <description>Allows you to build a chemical plant to produce plastics from petroleum.</description>
+    <totalCost>2000</totalCost>
+    <prerequisites>
+      <li>Refinery</li>
     </prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
   </ResearchProjectDef>
